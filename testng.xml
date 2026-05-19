@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<!--
-    testng.xml — Master Test Suite File
-    Location  : selenium-demo/testng.xml   (project ROOT, same level as pom.xml)
-
-    This file tells TestNG:
-      - What the suite is called       (shown in the HTML report title)
-      - Which test groups exist        (each <test> block = one group in the report)
-      - Which classes belong to each   (each <class> = one test file)
-
-    To RUN:
-      Eclipse  → Right-click testng.xml → Run As → TestNG Suite
-      Maven    → Right-click project    → Run As → Maven test
-
-    REPORT is generated at:
-      target/surefire-reports/index.html   ← open this in Chrome after the run
--->
-
-<suite name="AI Resume Builder - Automation Suite" verbose="1">
+<suite name="AI Resume Builder - Automation Suite" 
+       verbose="1"
+       parallel="tests"
+       thread-count="4">
 
     <!-- ── Group 1: Create Resume ──────────────────────────────────────────── -->
     <test name="Create Resume Test">
@@ -26,6 +12,7 @@
             <class name="tests.CreateResumeTest"/>
         </classes>
     </test>
+
 
     <!-- ── Group 2: Login and Create ───────────────────────────────────────── -->
     <test name="Login And Create Test">
