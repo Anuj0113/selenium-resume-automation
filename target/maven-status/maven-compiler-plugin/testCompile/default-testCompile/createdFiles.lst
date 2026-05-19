@@ -1,0 +1,6 @@
+base\SeleniumUtils.class
+pages\LoginPage.class
+pages\ResumeBuilderPage.class
+pages\DashboardPage.class
+base\DriverManager.class
+data\TestData.class

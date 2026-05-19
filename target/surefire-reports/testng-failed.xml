@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AI Resume Builder - Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Create Resume Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.CreateResumeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createResumeTest"/>
+        </methods>
+      </class> <!-- tests.CreateResumeTest -->
+    </classes>
+  </test> <!-- Create Resume Test(failed) -->
+  <test thread-count="5" name="Login And Create Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.LoginAndCreateTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginAndCreateTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginAndCreateTest -->
+    </classes>
+  </test> <!-- Login And Create Test(failed) -->
+  <test thread-count="5" name="AI Resume Builder Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.AIResumeBuilderTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="aiResumeBuilderTest"/>
+        </methods>
+      </class> <!-- tests.AIResumeBuilderTest -->
+    </classes>
+  </test> <!-- AI Resume Builder Test(failed) -->
+  <test thread-count="5" name="Upload Resume Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.UploadResumeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="uploadResumeTest"/>
+        </methods>
+      </class> <!-- tests.UploadResumeTest -->
+    </classes>
+  </test> <!-- Upload Resume Test(failed) -->
+</suite> <!-- Failed suite [AI Resume Builder - Automation Suite] -->
